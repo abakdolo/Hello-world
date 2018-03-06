@@ -1,0 +1,72 @@
+Create a new list of strings called thousand_or_greater that only contains the names shared by 1,000 people or more.
+
+To accomplish this:
+
+Create an empty list and assign it to thousand_or_greater.
+Write a for loop that iterates over numerical_list.
+In the loop body, use an if statement to determine if the value at index 1 for that element (which is a list) is greater than or equal to 1000.
+If the value is greater than or equal to 1000, use the append() method to add its name to thousand_or_greater.
+Finally, display the first 10 elements in thousand_or_greater.
+
+# The last value is ~100 people
+numerical_list[len(numerical_list)-1]
+thousand_or_greater = []
+for each in numerical_list:
+    if each[1] >= 1000:
+        thousand_or_greater.append(each[0])
+print(thousand_or_greater)
+
+['Casey', 'Riley', 'Jessie', 'Jackie', 'Avery', 'Jaime', 'Peyton', 'Kerry', 'Jody', 
+'Kendall', 'Payton', 'Skyler',  .......
+
+Create an empty list and assign to weather_data.
+Open and read in la_weather.csv.
+Split the data on the newline character to convert it to a list of rows.
+Split each row on the comma and append each list to weather_data.
+
+weather_data = []
+f=open("la_weather.csv","r")
+data = f.read()
+we_data = data.split("\n")
+for each in we_data:
+    weather_data.append(each.split(","))
+print(weather_data)
+
+weather_data = []
+f = open("la_weather.csv", 'r')
+data = f.read()
+rows = data.split('\n')
+for row in rows:
+    split_row = row.split(",")
+    weather_data.append(split_row)
+
+# weather_data has already been read in automatically to make things easier.
+weather = []
+for row in weather_data:
+    value = row[1]
+    weather.append(value)
+print(weather)
+
+animals = ["cat", "dog", "rabbit", "horse", "giant_horrible_monster"]
+if "cat" in animals:
+    print("cat found")
+    cat_found = True
+space_monster_found = "space_monster" in animals
+print(space_monster_found)
+
+Loop through each item in the weather_types list.
+Check whether the item occurs in the new_weather list.
+Append the result of the check to weather_type_found.
+At the end, weather_type_found should be a list of Boolean values.
+
+weather_types = ["Rain", "Sunny", "Fog", "Fog-Rain", "Thunderstorm", "Type of Weather"]
+weather_type_found = []
+for each in weather_types:
+    found = each in new_weather
+    weather_type_found.append(found)
+    
+    
+    
+
+
+
