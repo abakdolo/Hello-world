@@ -1,0 +1,81 @@
+# Weather has been loaded in.
+first_element = weather[0]
+last_element = weather[len(weather)-1]
+print(first_element)
+print(last_element)
+
+superhero_ranks = {}
+superhero_ranks["Aquaman"] = 1
+superhero_ranks["Superman"] = 2
+print(superhero_ranks)
+
+Look up FDR in president_ranks and assign the result to a new variable fdr_rank.
+Look up Lincoln in president_ranks and assign the result to a new variable lincoln_rank.
+Look up Aquaman in president_ranks and assign the result to a new variable aquaman_rank.
+
+president_ranks = {}
+president_ranks["FDR"] = 1
+president_ranks["Lincoln"] = 2
+president_ranks["Aquaman"] = 3
+fdr_rank = president_ranks["FDR"]
+lincoln_rank = president_ranks["Lincoln"]
+aquaman_rank = president_ranks["Aquaman"]
+
+scores = [80, 100, 60, 30]
+high_scores = []
+low_scores = []
+for score in scores:
+    if score > 70:
+        high_scores.append(score)
+    else:
+        low_scores.append(score)
+       
+planet_names = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune", "Uranus"]
+short_names = []
+long_names = []
+for planet in planet_names:
+    if len(planet) > 5:
+        long_names.append(planet)
+    else: 
+        short_names.append(planet)
+print(long_names)
+print(short_names)
+
+Count the number of times that each element occurs in the list named pantry that appears in the code block below. You'll need to:
+
+Create an empty dictionary named pantry_counts.
+Loop through each item in pantry.
+If the item appears in pantry_counts, add 1 to the value in pantry_counts for the item's key.
+Otherwise, add the item to pantry_counts as a key, with the value 1.
+When finished, each item in pantry will have its own key in pantry_counts, and its value will be the number of times the item appears in pantry.
+
+pantry = ["apple", "orange", "grape", "apple", "orange", "apple", "tomato", "potato", "grape"]
+pantry_counts = {}
+for item in pantry:
+    if item in pantry_counts:
+        pantry_counts[item] = pantry_counts[item] + 1
+    else:
+        pantry_counts[item] = 1
+print(pantry_counts)
+
+Count how many times each type of weather occurs in the weather list, 
+and store the results in a new dictionary called weather_counts.
+When finished, weather_counts should contain a key for each different type of weather in the weather list, 
+along with its associated frequency. Here's a preview of how the result should format the weather_counts dictionary 
+(note that you'll be using real values, rather than the dummy ones below):
+
+weather_counts = {}
+for item in weather:
+    if item in weather_counts:
+        weather_counts[item] = weather_counts[item] + 1
+    else:
+        weather_counts[item] = 1
+print(weather_counts)
+
+
+
+
+
+
+
+
